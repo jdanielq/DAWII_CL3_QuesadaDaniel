@@ -1,0 +1,12 @@
+<div>
+    <h2>Calculadora de Salario Semanal para Obrero</h2>
+    <label for="horas">Horas Trabajadas:</label>
+    <input type="number" id="horas" [(ngModel)]="horas">
+  
+    <button (click)="calcularSalario()">Calcular Salario</button>
+  
+    <div *ngIf="salario !== undefined">
+      <p>El obrero debe recibir un salario de: {{ salario | currency:'USD':'symbol':'1.2-2' }}</p>
+    </div>
+  </div>
+  

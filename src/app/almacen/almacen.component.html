@@ -1,0 +1,14 @@
+<div>
+  <h2>Calculadora de Precio en el Almacén</h2>
+  <label for="precio">Precio Unitario:</label>
+  <input type="number" id="precio" [(ngModel)]="precio">
+
+  <label for="cantidad">Cantidad Adquirida:</label>
+  <input type="number" id="cantidad" [(ngModel)]="cantidad">
+
+  <button (click)="calcularPrecio()">Calcular Precio</button>
+
+  <div *ngIf="precioFinal !== undefined">
+    <p>El cliente debe pagar: {{ precioFinal | currency:'USD':'symbol':'1.2-2' }}</p>
+  </div>
+</div>
