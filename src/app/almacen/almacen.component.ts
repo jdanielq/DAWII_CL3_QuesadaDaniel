@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./almacen.component.css']
 })
 export class AlmacenComponent {
-  precio: number;
-  cantidad: number;
-  precioFinal: number;
+  precio: number = 0;
+  cantidad: number = 0;
+  precioFinal: number = 0;
 
   calcularPrecio() {
     if (this.cantidad > 20) {

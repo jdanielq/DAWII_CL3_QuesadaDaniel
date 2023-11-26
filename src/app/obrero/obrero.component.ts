@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./obrero.component.css']
 })
 export class ObreroComponent {
-  horas: number;
-  salario: number;
+  horas: number = 0;
+  salario: number = 0;
 
   calcularSalario() {
     const salarioPorHora = 16;
